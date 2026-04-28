@@ -1,0 +1,120 @@
+import loginBg from "./loginbg.png";
+import welcomeBg from "./welcomeBg.png";
+import loginGif from "./gif/loginGif.gif";
+import Map from "./Map.png";
+import manCS from "./avatars/man-cs.png";
+import womanCS from "./avatars/woman-cs.png";
+import manPS from "./avatars/man-ps.png";
+import womanPS from "./avatars/woman-ps.png";
+import manAI from "./avatars/man-ai.png";
+import womanAI from "./avatars/woman-ai.png";
+import manGD from "./avatars/man-design.png";
+import womanGD from "./avatars/woman-design.png";
+import manUX from "./avatars/man-uiux.png";
+import womanUX from "./avatars/woman-uiux.png";
+
+import logoCS from "./logo-cs.png";
+import logoPS from "./logo-ps.png";
+import logoAI from "./logo-ai.png";
+import logoGD from "./logo-design.png";
+import logoUX from "./logo-uiux.png";
+import needsPanelBg from "./needsPanelBg.png";
+
+import mainBg from "./MainBg.png";
+import mainStatusBg from "./StatusBg.png";
+import mainCardsBg from "./CardsBg.png";
+import mainScoreboardBg from "./ScoreboardBg.png";
+import mainNeedsBg from "./NeedsBg.png";
+import mainTimerBg from "./TimerBg.png";
+import bookImg from "./book.png";
+import backOfCard from "./backOfCard.png";
+
+import {
+  splashCriticalAssets,
+  buttonClickSound,
+  splashIntroMusic,
+} from "./splashCritical";
+
+export {
+  splashGif,
+  splashBg,
+  headerBg,
+  buttonClickSound,
+  splashIntroMusic,
+  splashCriticalAssets,
+  splashPublicAssets,
+  splashPriorityAssets,
+} from "./splashCritical";
+
+export const heavyAssets = [
+  ...splashCriticalAssets,
+  buttonClickSound,
+  splashIntroMusic,
+  welcomeBg,
+  loginBg,
+  loginGif,
+  Map,
+  manCS,
+  womanCS,
+  manPS,
+  womanPS,
+  manAI,
+  womanAI,
+  manGD,
+  womanGD,
+  manUX,
+  womanUX,
+  logoCS,
+  logoPS,
+  logoAI,
+  logoGD,
+  logoUX,
+  needsPanelBg,
+  mainBg,
+  mainStatusBg,
+  mainCardsBg,
+  mainScoreboardBg,
+  mainNeedsBg,
+  mainTimerBg,
+  bookImg,
+  backOfCard,
+];
+
+/** Preload queue after splash-critical URLs / phase-1 sfx (splash trio + click + intro load in phase 1 only). */
+export const heavyAssetsAfterSplash = heavyAssets.filter(
+  (url) =>
+    !splashCriticalAssets.includes(url) &&
+    url !== buttonClickSound &&
+    url !== splashIntroMusic,
+);
+
+export {
+  welcomeBg,
+  loginBg,
+  loginGif,
+  Map,
+  manCS,
+  womanCS,
+  manPS,
+  womanPS,
+  manAI,
+  womanAI,
+  manGD,
+  womanGD,
+  manUX,
+  womanUX,
+  logoCS,
+  logoPS,
+  logoAI,
+  logoGD,
+  logoUX,
+  needsPanelBg,
+  mainBg,
+  mainStatusBg,
+  mainCardsBg,
+  mainScoreboardBg,
+  mainNeedsBg,
+  mainTimerBg,
+  bookImg,
+  backOfCard,
+};
